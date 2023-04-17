@@ -30,7 +30,7 @@ public class Jugador extends Futbolista implements Comparable<Object> {
 	        this.dorsal = dorsal;
 	    }
 	 public String toString() {
-			return ("El fubolista "+getNombre()+" tiene "+getEdad()+",y juega de "+getPosicion()+" con el dorsal"+getDorsal()+ ". Ha marcado "+getGolesMarcados());
+			return ("El futbolista "+getNombre()+" tiene "+getEdad()+", y juega de "+getPosicion()+" con el dorsal "+getDorsal()+ ". Ha marcado "+getGolesMarcados());
 		} 
     @Override
     public int compareTo(Futbolista otroJugador) {

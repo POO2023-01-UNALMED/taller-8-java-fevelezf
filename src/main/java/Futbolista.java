@@ -1,7 +1,7 @@
 package futbol;
 
 
-public abstract class Futbolista implements Comparable<Object> {
+public  abstract class Futbolista implements Comparable<Object> {
 	private String nombre;
 	private int edad;
 	private final String posicion ;
@@ -30,7 +30,7 @@ public abstract class Futbolista implements Comparable<Object> {
 		return posicion;
 	}
 	public String toString() {
-		return ("El fubolista "+getNombre()+" tiene "+getEdad()+",y juega de "+getPosicion());
+		return ("El futbolista "+getNombre()+" tiene "+getEdad()+", y juega de "+getPosicion());
 	}
     public boolean equals(Futbolista f) {
         if (this == f) {

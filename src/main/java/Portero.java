@@ -31,7 +31,7 @@ public class Portero extends Futbolista implements Comparable<Object> {
 	            return diferenciaGoles;
 	  }
 	 public String toString() {
-			return ("El fubolista "+getNombre()+" tiene "+getEdad()+",y juega de "+getPosicion()+" con el dorsal"+getDorsal()+ ". Le han marcado "+getGolesRecibidos());
+			return ("El futbolista "+getNombre()+" tiene "+getEdad()+", y juega de "+getPosicion()+" con el dorsal "+getDorsal()+ ". Le han marcado "+getGolesRecibidos());
 	 }
 	@Override
 	public boolean jugarConLasManos() {
