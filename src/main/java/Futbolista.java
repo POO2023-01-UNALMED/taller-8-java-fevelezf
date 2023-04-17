@@ -40,10 +40,7 @@ public abstract class Futbolista implements Comparable<Futbolista> {
     }
     @Override
     public int compareTo(Futbolista f) {
-        if (this.equals(f)) {
-            return 0;
-        }
-        return this.nombre.compareTo(f.nombre);
+    	return this.nombre.compareTo(f.nombre);
     }
     public abstract boolean jugarConLasManos();
 

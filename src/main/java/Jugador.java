@@ -32,10 +32,11 @@ public class Jugador extends Futbolista implements Comparable<Futbolista> {
 	 public String toString() {
 			return ("El fubolista "+getNombre()+" tiene "+getEdad()+",y juega de "+getPosicion()+" con el dorsal"+getDorsal()+ ". Ha marcado "+getGolesMarcados());
 		} 
-	@Override
-	public int compareTo(Futbolista f) {
-	    return Math.abs(this.getEdad() - f.getEdad());	 
-	}
+    @Override
+    public int compareTo(Futbolista otroJugador) {
+        int diferenciaEdad = Math.abs(getEdad() - otroJugador.getEdad());
+        return diferenciaEdad;
+    }
 	@Override
 	public boolean jugarConLasManos() {
 		return false;
